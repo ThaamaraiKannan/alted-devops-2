@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "name": "kannan",
+      "age": 18,
+      "city": "Coimbatore",
+      "mobile_number": 9988774455
+    },
+    {
+      "name": "Rakshith",
+      "age": 18,
+      "city": "bangalore",
+      "mobile_number": 9988774455
+    },
+    {
+      "name": "ramnath",
+      "age": 18,
+      "city": "Coimbatore",
+      "mobile_number": 9988774455
+    },
+    {
+      "name": "Sindhu",
+      "age": 18,
+      "city": "Banglore",
+      "mobile_number": 9988774455
+    },
+    {
+      "name": "Eswari",
+      "age": 18,
+      "city": "Erode",
+      "mobile_number": 9988774455
+    }
+  ]
+}
