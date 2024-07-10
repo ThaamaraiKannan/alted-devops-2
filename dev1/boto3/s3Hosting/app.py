@@ -58,7 +58,7 @@ def putObject():
     print(value)
     return
 
-putObject()
+# putObject()
 
 def staticWebsiteHost():
     response = s3.put_bucket_website(
@@ -85,3 +85,24 @@ def putObjectAcl():
     return
 
 # putObjectAcl()
+
+def listBuckets():
+    reponse = s3.list_buckets()
+    # print(reponse["Buckets"])
+    return reponse["Buckets"]
+
+# Bucktets = listBuckets()
+# for bucket in Bucktets:
+#     Name = bucket["Name"]
+#     print(Name)
+    
+listObject = s3.list_objects_v2(Bucket = "devops-sample-bucket-boto3")
+
+
+for data in listObject["Contents"]:
+    s3.delete_object(
+        Bucket = "devops-sample-bucket-boto3",
+        Key = data["Key"]
+    )
+    
+print(s3.list_objects_v2(Bucket = "devops-sample-bucket-boto3"))
