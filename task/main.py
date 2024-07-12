@@ -11,11 +11,11 @@ def task():
     check = re.match(pattern, webName)
     print(check)
     if check:
-        website(webName)
         bucketName = "devops-s3-dynamic-hosting-bucket"
         indexName = "app.html"
         url = "index.html"
         region = "ap-south-1"
+        website(webName, url)
         availableBuck = listBuckets()
         isAvailable = False
         for data in availableBuck:

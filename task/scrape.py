@@ -1,8 +1,8 @@
 import requests
 
-def website(webName):
+def website(webName, url):
     name = requests.get(webName)
-    with open("index.html", "w", encoding="utf-8") as f:
+    with open(url, "w", encoding="utf-8") as f:
         f.write(name.text)
     return
 
